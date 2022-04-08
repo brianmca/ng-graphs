@@ -1,0 +1,16 @@
+
+<div id="results-graph" fxLayout="column">
+
+<div *ngFor="let result of results" fxLayout="row">
+
+    <div> {{ result.name }} </div> 
+    <div class="barchart">
+     <div [ngStyle]='{ "width" :result.trump + "%" }' class="trump"> {{ result.trump }} </div> 
+     <div [ngStyle]='{ "width" :result.biden + "%"  }'class="biden"> {{ result.biden }} </div>  
+    </div>
+
+
+</div>
+
+
+</div>
